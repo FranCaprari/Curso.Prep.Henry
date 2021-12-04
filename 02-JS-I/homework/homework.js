@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-    const nuevaString = 'fran';
+    const nuevaString = str;
     return nuevaString;
   
 }
@@ -81,12 +81,11 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  var long1 = str1.lenght;
-  var long2 = str2.lenght;
-  if (long1 == long2){
-    return true;
+  iguales = false;
+  if (str1.lenght == str2.lenght){
+    return iguales;
   }
-  return false;
+  return iguales;
   
 }
 
@@ -151,7 +150,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  var cubo = math.pow(num,3);
+  var cubo = Math.pow(num,3);
   return cubo;
   
 }
@@ -159,7 +158,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var elevar = math.pow(num, exponent);
+  var elevar = Math.pow(num, exponent);
   return elevar;
   
 }
